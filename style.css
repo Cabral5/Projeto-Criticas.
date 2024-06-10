@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(Satoshi-Variable.ttf);
+}
+@font-face {
+  font-family: "Telma";
+  src: url(Telma-Variable.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Satoshi;
+}
+
+.navbar {
+  background-color: #252537; /*Ter noção da onde irá ficar*/
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px; /*Altura de onde vai ser */
+  align-items: center; /*Deixar os textos alinhados*/
+  width: 100%;
+  position: fixed;
+}
+
+.logo {
+  flex: 20%;
+  margin-left: 10%;
+  /* border: 1px solid red; */
+  text-align: left;
+}
+
+.logo h1 {
+  font-family: Telma;
+  color: #944c28;
+  font-size: 38px;
+}
+
+.menu {
+  flex: 70%;
+  /* border: 1px solid orange; */
+  text-align: right;
+  padding: 20px;
+}
+
+.menu a {
+  color: #c2cdc4;
+  padding: 10px 3px;
+  font-size: 20px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.menu :hover {
+  color: #944c28;
+}
+
+.principal {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1c28;
+  padding: 100px;
+}
+
+.titulo {
+  margin-left: 10%;
+  flex: 40%;
+}
+
+.titulo h2 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo p {
+  color: #c2cdc4;
+  text-align: left;
+}
+
+.img-principal {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+section.criticas {
+  background-color: #1c1c28;
+  padding: 5%;
+}
+
+section.criticas h2 {
+  /* padding: 10px; */
+  color: white;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start; /* Alinhar os itens ao topo */
+  margin: 5%; /* Adiciona margem vertical para separar os cartazes */
+  margin-left: 10%;
+}
+
+#cards-filmes,
+#cards-filme-02 {
+  margin-right: 20px;
+}
+
+#cards-filmes img,
+#cards-filme-02 img {
+  width: 100%; /* imagem ocupe 100% da largura do contêiner */
+  max-width: 145px; /* Define a largura máxima da imagem */
+  height: auto;
+  display: block;
+}
+
+.titulo-filmes h3, /*Usar o mesmo para serie*/
+.titulo-filmes p {
+  color: white;
+  margin: 15px 0;
+}
+
+#botao {
+  background-color: #252537;
+  color: white;
+  margin-top: 10px; /* Espaçamento entre o último parágrafo e o botão */
+  padding: 10px 25px;
+  border-radius: 15px;
+  text-decoration: none;
+  display: inline-block; /* Assegura que o botão se comporte como um bloco */
+}
+
+#botao:hover {
+  background-color: #944c28;
+}
+
+#cards-series,
+#cards-series-02 {
+  margin-right: 20px;
+}
+
+#cards-series img,
+#cards-series-02 img {
+  width: 100%; /* Certifique-se de que a imagem ocupe 100% da largura do contêiner */
+  max-width: 148px; /* Define a largura máxima da imagem */
+  height: auto;
+  display: block;
+}
+
+footer {
+  padding: 1px;
+  align-items: center;
+  background-color: #252537;
+  text-align: center;
+  color: #c2cdc4;
+}
+
+.logo-rodape {
+  padding: 60px;
+  font-family: Telma;
+}
+
+.logo-rodape h1 {
+  color: #944c28;
+}
+
+.logo-rodape p {
+  font-family: Satoshi;
+  color: white;
+}
+
+.critica-vin {
+  padding: 5%;
+  background-color: #1c1c28;
+  color: white;
+}
+
+.titulo-vin {
+  padding: 5px;
+  text-align: center;
+}
+
+.sub-titulo-vin {
+  margin-left: 5%;
+  font-size: 16px;
+}
+
+.criticas-geral {
+  background-color: #1c1c28;
+  padding: 1px;
+  color: #c2cdc4;
+}
+
+.criticas-geral p {
+  margin: 5%;
+  margin-top: 5px;
+}
+
+.criticas-geral img {
+  display: block;
+  margin: 20px auto; /* Centraliza a imagem horizontalmente */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+}
