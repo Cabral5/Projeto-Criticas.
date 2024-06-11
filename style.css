@@ -1,21 +1,28 @@
+/* Define a fonte personalizada 'Satoshi' */
 @font-face {
   font-family: "Satoshi";
   src: url(Satoshi-Variable.ttf);
 }
+
+/* Define a fonte personalizada 'Telma' */
 @font-face {
   font-family: "Telma";
   src: url(Telma-Variable.ttf);
 }
 
+/* Configuração padrão para garantir que a caixa de todos os elementos inclua preenchimento e borda */
 * {
   box-sizing: border-box;
 }
 
+/* Estilos gerais do corpo da página */
 body {
-  margin: 0;
-  font-family: Satoshi;
+  margin: 0; /* Remove margens padrão do corpo */
+  font-family: Satoshi; /* Define a fonte padrão para o corpo */
+  padding-top: 100px; /* Adiciona espaço no topo para o menu fixo */
 }
 
+/* Estilos da barra de navegação */
 .navbar {
   background-color: #252537; /*Ter noção da onde irá ficar*/
   display: flex;
@@ -23,9 +30,12 @@ body {
   height: 100px; /*Altura de onde vai ser */
   align-items: center; /*Deixar os textos alinhados*/
   width: 100%;
-  position: fixed;
+  position: fixed; /* Fixar o menu no topo */
+  top: 0; /* Ficar no topo da página */
+  z-index: 1000; /* Colocar o menu acima dos outros elementos */
 }
 
+/* Estilos do logotipo */
 .logo {
   flex: 20%;
   margin-left: 10%;
@@ -33,12 +43,14 @@ body {
   text-align: left;
 }
 
+/* Estilos do texto do logotipo */
 .logo h1 {
   font-family: Telma;
   color: #944c28;
   font-size: 38px;
 }
 
+/* Estilos do menu de navegação */
 .menu {
   flex: 70%;
   /* border: 1px solid orange; */
@@ -46,6 +58,7 @@ body {
   padding: 20px;
 }
 
+/* Estilos dos links do menu */
 .menu a {
   color: #c2cdc4;
   padding: 10px 3px;
@@ -54,10 +67,12 @@ body {
   margin-right: 50px;
 }
 
+/* Estilos de hover dos links do menu */
 .menu :hover {
   color: #944c28;
 }
 
+/* Estilos da seção principal */
 .principal {
   display: flex;
   flex-flow: row wrap;
@@ -67,11 +82,13 @@ body {
   padding: 100px;
 }
 
+/* Estilos do título da seção principal */
 .titulo {
   margin-left: 10%;
   flex: 40%;
 }
 
+/* Estilos do texto do título principal */
 .titulo h2 {
   font-size: 20px;
   color: white;
@@ -79,54 +96,58 @@ body {
   padding: 0;
 }
 
+/* Estilos do texto da seção principal */
 .titulo p {
   color: #c2cdc4;
   text-align: left;
 }
 
+/* Estilos da imagem principal */
 .img-principal {
   margin-right: 10%;
   flex: 40%;
   text-align: center;
 }
 
+/* Estilos da seção de críticas */
 section.criticas {
   background-color: #1c1c28;
   padding: 5%;
 }
 
+/* Estilos do título da seção de críticas */
 section.criticas h2 {
   /* padding: 10px; */
   color: white;
   text-align: center;
 }
 
+/* Estilos dos cartões de filmes e séries */
 .cards {
   display: flex;
-  align-items: flex-start; /* Alinhar os itens ao topo */
+  align-items: flex-start; /* Alinha os itens ao topo */
   margin: 5%; /* Adiciona margem vertical para separar os cartazes */
-  margin-left: 10%;
+  margin-left: 10%; /* Adiciona margem à esquerda */
 }
 
-#cards-filmes,
-#cards-filme-02 {
-  margin-right: 20px;
-}
-
+/* Estilos das imagens dos cartões de filmes */
 #cards-filmes img,
 #cards-filme-02 img {
+  margin-right: 20px; /* Adiciona margem à direita */
   width: 100%; /* imagem ocupe 100% da largura do contêiner */
   max-width: 145px; /* Define a largura máxima da imagem */
   height: auto;
   display: block;
 }
 
+/* Estilos dos títulos e informações dos filmes */
 .titulo-filmes h3, /*Usar o mesmo para serie*/
 .titulo-filmes p {
   color: white;
   margin: 15px 0;
 }
 
+/* Estilos do botão */
 #botao {
   background-color: #252537;
   color: white;
@@ -137,76 +158,84 @@ section.criticas h2 {
   display: inline-block; /* Assegura que o botão se comporte como um bloco */
 }
 
+/* Estilos do botão ao passar o mouse */
 #botao:hover {
   background-color: #944c28;
 }
 
-#cards-series,
-#cards-series-02 {
-  margin-right: 20px;
-}
-
+/* Estilos das imagens dos cartões de séries */
 #cards-series img,
 #cards-series-02 img {
+  margin-right: 20px; /* Adiciona margem à direita */
   width: 100%; /* Certifique-se de que a imagem ocupe 100% da largura do contêiner */
   max-width: 148px; /* Define a largura máxima da imagem */
   height: auto;
   display: block;
 }
 
+/* Estilos do rodapé */
 footer {
-  padding: 1px;
-  align-items: center;
-  background-color: #252537;
-  text-align: center;
-  color: #c2cdc4;
+  padding: 1px; /* Adiciona preenchimento interno ao rodapé */
+  align-items: center; /* Alinha os itens ao centro */
+  background-color: #252537; /* Define a cor de fundo do rodapé */
+  text-align: center; /* Alinha o texto ao centro */
+  color: #c2cdc4; /* Define a cor do texto */
 }
 
+/* Estilos do logotipo no rodapé */
 .logo-rodape {
-  padding: 60px;
-  font-family: Telma;
+  padding: 60px; /* Adiciona preenchimento interno ao logotipo do rodapé */
+  font-family: Telma; /* Define a fonte do logotipo */
 }
 
+/* Estilos do texto do logotipo no rodapé */
 .logo-rodape h1 {
-  color: #944c28;
+  color: #ce5a0d; /* Define a cor do texto do logotipo */
 }
 
+/* Estilos do parágrafo no rodapé */
 .logo-rodape p {
-  font-family: Satoshi;
-  color: white;
+  font-family: Satoshi; /* Define a fonte do parágrafo */
+  color: white; /* Define a cor do texto do parágrafo */
 }
 
+/* Estilos da seção de crítica do Vin */
 .critica-vin {
-  padding: 5%;
-  background-color: #1c1c28;
-  color: white;
+  padding: 5%; /* Adiciona preenchimento interno à seção de crítica do Vin */
+  background-color: #1c1c28; /* Define a cor de fundo da seção de crítica do Vin */
+  color: white; /* Define a cor do texto */
 }
 
+/* Estilos do título da seção de crítica do Vin */
 .titulo-vin {
-  padding: 5px;
-  text-align: center;
+  padding: 5px; /* Adiciona preenchimento interno ao título da seção de crítica do Vin */
+  text-align: center; /* Alinha o texto ao centro */
 }
 
+/* Estilos do sub-título da seção de crítica do Vin */
 .sub-titulo-vin {
-  margin-left: 5%;
-  font-size: 16px;
+  margin-left: 5%; /* Adiciona margem à esquerda */
+  font-size: 16px; /* Define o tamanho da fonte */
 }
 
+/* Estilos da seção de críticas gerais */
 .criticas-geral {
-  background-color: #1c1c28;
-  padding: 1px;
-  color: #c2cdc4;
+  background-color: #1c1c28; /* Define a cor de fundo da seção de críticas gerais */
+  padding: 1px; /* Adiciona preenchimento interno */
+  color: #c2cdc4; /* Define a cor do texto */
 }
 
+/* Estilos do parágrafo na seção de críticas gerais */
 .criticas-geral p {
-  margin: 5%;
-  margin-top: 5px;
+  margin: 5%; /* Adiciona margem */
+  margin-top: 5px; /* Adiciona margem no topo */
 }
 
+/* Estilos das imagens na seção de críticas gerais */
 .criticas-geral img {
-  display: block;
+  display: block; /* Define a imagem como um bloco */
   margin: 20px auto; /* Centraliza a imagem horizontalmente */
   max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 10px;
+  border-radius: 10px; /* Adiciona borda arredondada */
 }
